@@ -1,0 +1,388 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 11vw;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 1vw 4vw 1vw 4vw;
+	margin-left:-100px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
+  
+<style>
+.parallax {
+    /* The image used */
+    background-image: url("p3.jpg");
+
+    /* Set a specific height */
+    min-height: 250px; 
+	min-width: 650px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+.parallax1 {
+    /* The image used */
+    background-image: url("p3.jpg");
+
+    /* Set a specific height */
+    min-height: 250px; 
+	min-width: 650px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+.parallax2 {
+    /* The image used */
+    background-image: url("about.png");
+ 
+
+    /* Set a specific height */
+    min-height: 450px; 
+	min-width: 550px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:auto;
+}
+</style>
+  
+<link rel="stylesheet" href="CSSfile.css" type="text/css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  
+  
+
+<title>Home page</title>
+</head>
+<body>
+	
+	<div id="container">
+    	<input id="toggle" type="checkbox"><label for="toggle">&equiv;</label>
+        
+        
+		<div class="content"> 
+        
+        <center><h1 style="color:white">Lucrare pentru obținerea examenului de atestat</h1></center>
+        <center><h1 style="color:white">Bibliotecă virtuală</h1></center>
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Autentificare</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="login.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="avatar.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container1">
+      Numele<input type="text" placeholder="Scrie numele" name="numele" required>
+
+      Parola<input type="password" placeholder="Scrie parola" name="parola" required>
+        
+     <button type="text" ><a href="index.html"> Autentificare</a></button>
+
+      <input type="checkbox" checked="checked"><button type="submit" > Salveaza parola </button>
+    </div>
+
+    <div class="container1" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Anuleaza</button>
+      <span class="psw">Ai uitat <a href="index.html">parola?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+            
+            <center><div id="earth"></div></center>
+            <br><br><br><br><br>
+            
+            <p>
+             <span style="float:left;text-align:left;"><font color="white">Echipa: Airinei Eliza Diana<br></br>Clasa XII A</font></span>
+              <a href="#" style="float:right;text-align:right;"><font color="white">Profesor: Coajă Gabriela<br></br>Colegiul Național Eudoxiu Hurmuzachi</font> </a>
+            </p>
+            <center><p style="font-size:3vw;"><font color="white"><br><br>MAI 2021</font></p></center>
+            
+            <center><div class="dropdown">
+           	<a href="#MD" style="font-size:11vw; color:black; margin-left:-100px"  class="fa">&#xf13a;</a>
+            <div class="dropdown-content">
+    		<p style="font-size:1.20vw;">Scroll down to see the content or use the menu from the top left corner!</p>
+  </div>
+</div></center>
+
+
+            
+    
+        <div class="text">
+        	 			
+            <h1 id="MD"><center>Limba şi literatura română</center></h1><br>
+            <div class="parallax"></div><br>
+            
+            
+            <h2 style="text-align:center">Descoperă</h2>
+
+
+
+<div class="row">
+  <div class="column">Recenzii
+      <div style="width:200px;">
+	  
+	  
+	  <style>
+a:link {
+  color: #d4a377; 
+  background-color: transparent; 
+  text-decoration: none;
+}
+
+a:visited {
+  color:#dfbf9f;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #d4a377;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #f9f2ec;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>
+	  
+	  
+	  
+	  
+	  </div>
+    <img src="carte.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  
+  <div id="myModali" class="modali">
+  <span class="closeb" onclick="closeModal()">&times;</span>
+  <div class="modal-contenti">
+    <button><a href="Webpage1.html" class="button button1" role="button">Recenzie Anna Karenina</a></button><br><br><br>
+    <button><a href="WebPage2.html" class="button button1" role="button">Recenzie Mândrie și Prejudecată</a></button><br><br><br>
+	<button><a href="WebPage3.html" class="button button1" role="button">Recenzie Procesul</a></button><br><br><br>
+    <button><a href="WebPage4.html" class="button button1" role="button">Recenzie Cimitirul Animalelor</a></button><br><br><br>
+	<button><a href="WebPage5.html" class="button button1" role="button">Recenzie Contele de Monte Cristo</a></button><br><br><br>
+	
+   
+	 </div>
+</div>
+  
+  </div>
+  
+
+  
+  <div class="column">Cărti
+    <img src="carte.jpg" style="width:100%" onclick="openModal2();currentSlide(2)" class="hover-shadow cursor">
+   
+   <div id="myModali2" class="modali">
+  <span class="closeb" onclick="closeModal2()">&times;</span>
+  <div class="modal-contenti">
+    <button><a href="Webpage6.html" class="button button1" role="button">Ion</a></button><br><br><br>
+    <button><a href="WebPage7.html" class="button button1" role="button">De veghe în lanul de secară</a></button><br><br><br>
+	<button><a href="WebPage8.html" class="button button1" role="button">Jocul Ielelor</a></button><br><br><br>
+	<button><a href="Webpage9.html" class="button button1" role="button">Varianta rapidă de pregătire a eseului pentru bacalaureat</a></button><br><br><br>
+    <button><a href="WebPage10.html" class="button button1" role="button">Ultima noapte de dragoste, întâia noapte de război</a></button><br><br><br>
+	
+	 </div>
+</div>
+   
+    </div>
+    
+  <div class="column">Eseuri
+    <img src="carte.jpg" style="width:100%" onclick="openModal3();currentSlide(3)" class="hover-shadow cursor">
+
+
+<div id="myModali3" class="modali">
+  <span class="closeb" onclick="closeModal3()">&times;</span>
+  <div class="modal-contenti">
+    <button><a href="Webpage11.html" class="button button1" role="button">Iubirea cheamă iubire</a></button><br><br><br>
+    <button><a href="WebPage12.html" class="button button1" role="button">Privește viața prin fereastra deschisă</a></button><br><br><br>
+	<button><a href="WebPage13.html" class="button button1" role="button">Dimineți negre</a></button><br><br><br>
+	<button><a href="Webpage14.html" class="button button1" role="button">Poveste</a></button><br><br><br>
+    <button><a href="WebPage15.html" class="button button1" role="button">Scrisoare memoralistică</a></button><br><br><br>
+	
+	 </div>
+</div>
+  
+  </div>
+  
+  <div class="column">Altele
+    <img src="carte.jpg" style="width:100%" onclick="openModal4();currentSlide(4)" class="hover-shadow cursor">
+ 
+ <div id="myModali4" class="modali">
+  <span class="closeb" onclick="closeModal4()">&times;</span>
+  <div class="modal-contenti">
+    <button><a href="Webpage16.html" class="button button1" role="button">Sugestii Bacalaureat</a></button><br><br><br>
+    <button><a href="WebPage17.html" class="button button1" role="button">Bacalaureat-Informații</a></button><br><br><br>
+	<button><a href="WebPage18.html" class="button button1" role="button">Structura textului argumentativ</a></button><br><br><br>
+	<button><a href="WebPage19.html" class="button button1" role="button">Bibliografie</a></button><br><br><br>
+	 </div>
+</div>
+ 
+  </div>
+  
+
+
+</div>
+<a href="WebPage1.html" class="button button1"></a>
+<div id="myModali" class="modali">
+  <span class="closeb" onclick="closeModal()">&times;</span>
+  <div class="modal-contenti">
+    <button><a href="Webpage1.html" class="button button1" role="button">link Button</a></button><br><br><br>
+    <button><a href="WebPage2.html" class="button button1" role="button">Link Button</a></button><br><br><br>
+	<button><a href="WebPage3.html" class="button button1" role="button">Link Button</a></button><br><br><br>
+	<button><a href="WebPage4.html" class="button button1" role="button">Link Button</a></button><br><br><br>
+    <button><a href="WebPage5.html" class="button button1" role="button">Link Button</a></button><br><br><br>
+	<button><a href="WebPage6.html" class="button button1" role="button">Link Button</a></button><br><br><br>
+	<button><a href="WebPage7.html" class="button button1" role="button">Link Button</a></button><br><br><br>
+    <button><a href="WebPage8.html" class="button button1" role="button">Link Button</a></button><br><br><br>
+  </div>
+</div>
+
+
+
+
+
+<script>
+function openModal() {
+  document.getElementById('myModali').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModali').style.display = "none";
+}
+
+function openModal2() {
+  document.getElementById('myModali2').style.display = "block";
+}
+
+function closeModal2() {
+  document.getElementById('myModali2').style.display = "none";
+}
+
+function openModal3() {
+  document.getElementById('myModali3').style.display = "block";
+}
+
+function closeModal3() {
+  document.getElementById('myModali3').style.display = "none";
+}
+
+function openModal4() {
+  document.getElementById('myModali4').style.display = "block";
+}
+
+function closeModal4() {
+  document.getElementById('myModali4').style.display = "none";
+}
+
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+            
+            
+        
+    		
+
+
+
+       		<br><br><br>
+           	<h1 id="MU"><center>Enjoy it!</center></h1><br>
+            <div class="parallax1"></div>
+			
+            
+            
+            <br><br><br><br><br><br><br><br><br><br>
+            <h1 id="MI"><center>Despre noi</center></h1><br>
+            
+            <center><p>  ...</p><hr></center>
+            <div class="parallax2"></div>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            
+    	</div>
+        </div>
+    
+    
+		<div class="slide-menu">
+    		<h1><center>Meniu</center></h1>
+            
+    	<nav class="menu">
+      		<li><a href="index.html"><center>Acasă</center></a></li>
+      		<li><a href="#MD"><center>Descoperă mai multe</center></a></li>
+      		<li><a href="#MU"><center>Enjoy it!</center></a></li>
+      		<li><a href="#MI"><center>Despre noi</center></a></li>
+      		
+          	
+    	</nav><br>
+       	  <a href="https://www.facebook.com/maria.epatov" class="fa fa-facebook"></a>
+		  <a href="https://twitter.com/Twitter?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="fa fa-twitter"></a>
+		  <a href="https://www.google.co.uk/webhp?hl=en&sa=X&ved=0ahUKEwj8jtGQu6vTAhUXM8AKHabFA4YQPAgD" class="fa fa-google"></a>
+		  <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+      <a href="https://www.snapchat.com/" class="fa fa-snapchat-ghost"></a>
+    	</div>
+    </div> 
+</body>
+</html>

@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 11vw;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 1vw 4vw 1vw 4vw;
+	margin-left:-100px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
+  
+<style>
+.parallax {
+    /* The image used */
+    background-image: url("1p.jpg");
+
+    /* Set a specific height */
+    min-height: 250px; 
+	min-width: 650px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+.parallax1 {
+    /* The image used */
+    background-image: url("1p.jpg");
+
+    /* Set a specific height */
+    min-height: 250px; 
+	min-width: 650px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+.parallax2 {
+    /* The image used */
+    background-image: url("about.png");
+
+    /* Set a specific height */
+    min-height: 450px; 
+	min-width:550px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:auto;
+}
+</style>
+  
+<link rel="stylesheet" href="CSSfile.css" type="text/css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  
+  
+
+<title>Home page</title>
+</head>
+<body>
+	
+	<div id="container">
+    	<input id="toggle" type="checkbox"><label for="toggle">&equiv;</label>
+        
+        
+		<div class="content"> 
+        
+        <center><h1 style="color:white">Bibliotecă virtuală</h1></center>
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Autentificare</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="login.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="avatar.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container1">
+      Numele<input type="text" placeholder="Scrie numele" name="numele" required>
+
+      Parola<input type="password" placeholder="Scrie parola" name="parola" required>
+        
+       <button type="text" ><a href="index.html"> Autentificare</a></button>
+
+      <input type="checkbox" checked="checked"> <button type="submit" >Salveaza parola</button>
+    </div>
+
+    <div class="container1" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Anuleaza</button>
+      <span class="psw">Ai uitat <a href="index.html">parola?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+            
+            <center><div id="earth"></div></center>
+            <br><br><br><br><br>
+            <center><p style="font-size:3.20vw;"><font color="white"><br><br>Lectura este o calatorie interioara</font></p></center>
+            <center><div class="dropdown">
+           	<a href="#MD" style="font-size:11vw; color:black; margin-left:-100px"  class="fa">&#xf13a;</a>
+            <div class="dropdown-content">
+    		<p style="font-size:1.20vw;">Scroll down to see the content or use the menu from the top left corner!</p>
+  </div>
+</div></center>
+
+
+            
+    
+        <div class="text">
+        	 			
+            <h1 id="MD"><center>Limba şi literatura română</center></h1><br>
+            <div class="parallax"></div><br>
+            
+            
+            <h2 style="text-align:center">Descoperă</h2>
+
+
+
+
+
+            <iframe src="Subiectul-II-bac-informatii.pdf" height="800px" width="700px"></iframe>
+            
+        
+    		
+
+
+
+       		<br><br><br>
+           	<h1 id="MU"><center>Enjoy it!</center></h1><br>
+            <div class="parallax1"></div>
+			
+            
+            
+            <br><br><br><br><br><br><br><br><br><br>
+            <h1 id="MI"><center>Despre noi</center></h1><br>
+            <center><p>  ...</p><hr></center>
+            <div class="parallax2"></div>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            
+    	</div>
+        </div>
+    
+    
+		<div class="slide-menu">
+    		<h1><center>Meniu</center></h1>
+            
+    	<nav class="menu">
+      		<li><a href="index.html"><center>Acasă</center></a></li>
+      		<li><a href="#MD"><center>Descoperă mai multe</center></a></li>
+      		<li><a href="#MU"><center>Enjoy it!</center></a></li>
+      		<li><a href="#MI"><center>Despre noi</center></a></li>
+      		
+          	
+    	</nav><br>
+       	  <a href="https://www.facebook.com/maria.epatov" class="fa fa-facebook"></a>
+		  <a href="https://twitter.com/Twitter?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="fa fa-twitter"></a>
+		  <a href="https://www.google.co.uk/webhp?hl=en&sa=X&ved=0ahUKEwj8jtGQu6vTAhUXM8AKHabFA4YQPAgD" class="fa fa-google"></a>
+		  <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+      <a href="https://www.snapchat.com/" class="fa fa-snapchat-ghost"></a>
+    	</div>
+    </div> 
+</body>
+</html>
